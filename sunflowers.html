@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="">
+<head>
+  <meta charset="UTF-8">
+  <title>Send Me a Letter - Dino's Flower Shop</title>
+  <link rel='stylesheet' href="css/style-m.css">
+  <style>
+    .sunflower-letter {
+      max-width: 480px;
+      margin: 48px auto;
+      background: #fff8e1;
+      border-radius: 24px;
+      box-shadow: 0 4px 24px rgba(255, 224, 102, 0.18);
+      padding: 32px 28px 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .sunflower-letter label {
+      font-weight: bold;
+      color: #b8860b;
+      margin-bottom: 2px;
+    }
+    .sunflower-letter h2 {
+      text-align: center;
+      color: #da9f4c;
+    }
+    .sunflower-letter button {
+      background: linear-gradient(90deg, #ffe066 0%, #fffde4 100%);
+      color: #b8860b;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      box-shadow: 0 4px 12px rgba(255, 224, 102, 0.25);
+      cursor: pointer;
+      transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    }
+    .sunflower-letter button:hover {
+      background: linear-gradient(90deg, #fffde4 0%, #ffe066 100%);
+      box-shadow: 0 6px 24px rgba(255, 224, 102, 0.35);
+      transform: translateY(-2px) scale(1.04);
+    }
+    .sunflower-letter p {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="main-header">
+      <div class="header-content">
+        <nav class="header-nav header-left">
+          <a href="letter.html">A Letter from me</a>
+          <a href="about.html">About</a>
+          <a href="send-letter.html">Send me a letter</a>
+        </nav>
+        <div class="header-image">
+          <img src="../Flower-Shop/img/cheer-bear.gif" alt="cheer bear" class="header-icon">
+        </div>
+        <div class="header-left">
+          <a href="index.html"><h1 style="color: #c2185b;">Dino's Flower Shop</h1></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <form class="sunflower-letter">
+      <img src="img/sunflowers.png" width="80" height="default" alt="Sunflowers" style="display: block; margin: 0 auto 16px auto;">
+      <h2>A Bouquet of Two Sunflowers</h2>
+      <bdi><p>Have you heard of the sunflowers theory?</p>
+      <p>They say when you give someone sunflowers, you should always give two.</p>
+      <p>Because when the sun shines bright, sunflowers face the light.</p>
+      <p>But when night falls, they turn to face each other, finding light in one another.</p>
+      <p>So when you gift someone sunflowers, you're really saying:</p>
+      <p><h2>"Even in the dark, you are my light."</h2></p>
+      <p>When life gets heavy, you can always reach my hand.
+        And You are my sunshine, Dno
+      </p></bdi>
+      <button type="button" onclick="window.history.back()">Go Back</button>
+    </form>
+  </main>
+</body>
+</html>

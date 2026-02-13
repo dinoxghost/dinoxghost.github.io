@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ar" dir="">
+<head>
+  <meta charset="UTF-8">
+  <title>Send Me a Letter - Dino's Flower Shop</title>
+  <link rel='stylesheet' href="css/style-m.css">
+  <style>
+    .letter-form {
+      max-width: 480px;
+      margin: 48px auto;
+      background: #fff8e1;
+      border-radius: 24px;
+      box-shadow: 0 4px 24px rgba(255, 224, 102, 0.18);
+      padding: 32px 28px 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .letter-form label {
+      font-weight: bold;
+      color: #b8860b;
+      margin-bottom: 6px;
+    }
+    .letter-form input, .letter-form textarea {
+      border: 1px solid #ffe066;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 1rem;
+      font-family: inherit;
+      background: #fffde4;
+      color: #474283;
+      resize: vertical;
+    }
+    .letter-form textarea {
+      min-height: 100px;
+      max-height: 300px;
+    }
+    .letter-form button {
+      background: linear-gradient(90deg, #ffe066 0%, #fffde4 100%);
+      color: #b8860b;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      box-shadow: 0 4px 12px rgba(255, 224, 102, 0.25);
+      cursor: pointer;
+      transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    }
+    .letter-form button:hover {
+      background: linear-gradient(90deg, #fffde4 0%, #ffe066 100%);
+      box-shadow: 0 6px 24px rgba(255, 224, 102, 0.35);
+      transform: translateY(-2px) scale(1.04);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="main-header">
+      <div class="header-content">
+        <nav class="header-nav header-left">
+          <a href="letter.html">A Letter from me</a>
+          <a href="about.html">About</a>
+          <a href="send-letter.html">Send me a letter</a>
+        </nav>
+        <div class="header-image">
+          <img src="../Flower-Shop/img/cheer-bear.gif" alt="cheer bear" class="header-icon">
+        </div>
+        <div class="header-left">
+          <a href="index.html"><h1>Dino's Flower Shop</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <form class="letter-form">
+      <h2>Send Me a Letter</h2>
+      <label for="From">From: Dno</label>
+      <label for="To">To: Dino</label>
+      <bdi><label for="Subject">Subject:</label></bdi>
+      <input type="text" id="subject" name="subject" required>
+      <bdi><label for="message">Your Message:</label></bdi>
+      <textarea id="message" name="message" required></textarea>
+      <button type="submit">Send Letter</button>
+      <button type="button" onclick="window.history.back()">Go Back</button>
+    </form>
+  </main>
+</body>
+</html>
